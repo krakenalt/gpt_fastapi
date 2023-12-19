@@ -6,3 +6,5 @@ services:
     network_mode: container:openvpn-client
     environment:
       - OPENAI_API_KEY
+    ports:
+      - "80:80"
