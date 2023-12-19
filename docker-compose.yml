@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  chatgpt_fastapi:
+    build: .
+    network_mode: container:openvpn-client
+    environment:
+      - OPENAI_API_KEY
